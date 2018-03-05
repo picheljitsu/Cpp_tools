@@ -16,10 +16,10 @@ using namespace std;
 SOCKET s; //Socket handle
 
 
-		  //CONNECTTOHOST – Connects to a remote host
+		  //CONNECTTOHOST â€“ Connects to a remote host
 bool ConnectToHost(int PortNo, char* IPAddress)
 {
-	//Start up Winsock…
+	//Start up Winsockâ€¦
 	WSADATA wsadata;
 	
 	int error = WSAStartup(0x0202, &wsadata);
@@ -35,7 +35,7 @@ bool ConnectToHost(int PortNo, char* IPAddress)
 		return false;
 	}
 
-	//Fill out the information needed to initialize a socket…
+	//Fill out the information needed to initialize a socketâ€¦
 	//SOCKADDR_IN localaddr;
 	//localaddr.sin_family = AF_INET;
 	//localaddr.sin_addr.s_addr = inet_addr("172.17.120.30");
