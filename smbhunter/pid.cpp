@@ -16,7 +16,6 @@ using namespace std;
 
 std::string delim = ",";
 
-
 void clear() {
 	COORD topLeft = { 0, 0 };
 	HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -176,7 +175,6 @@ IWbemServices* wmiSetup()
 
 }
 
-
 std::string getWMIEvent(int pid, IWbemServices *pSvc)
 {
 	HRESULT hres;
@@ -195,8 +193,6 @@ std::string getWMIEvent(int pid, IWbemServices *pSvc)
 		WBEM_FLAG_FORWARD_ONLY | WBEM_FLAG_RETURN_IMMEDIATELY,
 		NULL,
 		&pEnumerator);
-
-
 
 	IWbemClassObject *pclsObj = NULL;
 	ULONG uReturn = 0;
@@ -226,7 +222,8 @@ std::string getWMIEvent(int pid, IWbemServices *pSvc)
 
 		VariantClear(&vtProp);
 
-		if (bstr_comp == 0) {
+		if (bstr_comp == 0) 
+		{
 
 			hr = pclsObj->Get(L"CreationDate", 0, &vtProp, 0, 0);
 			std::string creationdate;
@@ -299,7 +296,8 @@ connnectInfo getConnectInfo()
     ulSize = sizeof (MIB_TCPTABLE);
 
     if ((dwRetVal = GetTcpTable2(pTcpTable, &ulSize, TRUE)) ==
-        ERROR_INSUFFICIENT_BUFFER) {
+        ERROR_INSUFFICIENT_BUFFER) 
+    {
         FREE(pTcpTable);
         pTcpTable = (MIB_TCPTABLE2 *) MALLOC(ulSize);
         if (pTcpTable == NULL) {
@@ -322,7 +320,8 @@ connnectInfo getConnectInfo()
 	connnectInfo newConnection;
 	newConnection.connectionDataFound = false;
 
-    if ((dwRetVal = GetTcpTable2(pTcpTable, &ulSize, TRUE)) == NO_ERROR) {
+    if ((dwRetVal = GetTcpTable2(pTcpTable, &ulSize, TRUE)) == NO_ERROR) 
+    {
 		
         for (i = 0; i < (int) pTcpTable->dwNumEntries; i++) {
 			rportNo = ntohs((u_short)pTcpTable->table[i].dwRemotePort);
@@ -360,7 +359,8 @@ connnectInfo getConnectInfo()
 
     }
     
-    if (pTcpTable != NULL) {
+    if (pTcpTable != NULL) 
+    {
         FREE(pTcpTable);
         pTcpTable = NULL;
     }
