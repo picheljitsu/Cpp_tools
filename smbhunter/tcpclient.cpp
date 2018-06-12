@@ -15,8 +15,7 @@ using namespace std;
 
 SOCKET s; //Socket handle
 
-
-		  //CONNECTTOHOST – Connects to a remote host
+//CONNECTTOHOST – Connects to a remote host
 bool ConnectToHost(int PortNo, char* IPAddress)
 {
 	//Start up Winsock…
@@ -34,12 +33,6 @@ bool ConnectToHost(int PortNo, char* IPAddress)
 		WSACleanup(); //Clean up Winsock
 		return false;
 	}
-
-	//Fill out the information needed to initialize a socket…
-	//SOCKADDR_IN localaddr;
-	//localaddr.sin_family = AF_INET;
-	//localaddr.sin_addr.s_addr = inet_addr("172.17.120.30");
-	//bind(s, (SOCKADDR *)&localaddr, sizeof(localaddr));
 
 	SOCKADDR_IN target; //Socket address information
 
