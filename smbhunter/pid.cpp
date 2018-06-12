@@ -381,7 +381,6 @@ std::string getOutput(IWbemServices *pSvc)
 
 	}
 
-	//DEBUG
 	else
 	{
 
