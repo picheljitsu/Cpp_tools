@@ -1,0 +1,20 @@
+﻿  win64lib.cpp
+  stdafx.cpp
+  wmiEv.cpp
+c:\dev\netstat\wmiev.cpp(162): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\corecrt_wstdlib.h(69): note: see declaration of '_itow'
+  tcpclient.cpp
+c:\dev\netstat\tcpclient.cpp(88): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  pid.cpp
+c:\dev\netstat\pid.cpp(220): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\corecrt_wstdlib.h(69): note: see declaration of '_itow'
+c:\dev\netstat\pid.cpp(333): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(1848): note: see declaration of 'inet_ntoa'
+c:\dev\netstat\pid.cpp(342): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(1848): note: see declaration of 'inet_ntoa'
+  EventSink.cpp
+  Generating Code...
+  dllmain.cpp
+     Creating library c:\users\potatobox\documents\visual studio 2017\Projects\win64lib\x64\Debug\win64lib.lib and object c:\users\potatobox\documents\visual studio 2017\Projects\win64lib\x64\Debug\win64lib.exp
+  win64lib.vcxproj -> c:\users\potatobox\documents\visual studio 2017\Projects\win64lib\x64\Debug\win64lib.dll
+  win64lib.vcxproj -> c:\users\potatobox\documents\visual studio 2017\Projects\win64lib\x64\Debug\win64lib.pdb (Partial PDB)

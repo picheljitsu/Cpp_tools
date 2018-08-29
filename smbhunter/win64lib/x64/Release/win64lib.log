@@ -1,0 +1,5 @@
+﻿     Creating library Z:\GITREPO\smbhunter\x64\Release\win64lib.lib and object Z:\GITREPO\smbhunter\x64\Release\win64lib.exp
+  Generating code
+  All 326 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  win64lib.vcxproj -> Z:\GITREPO\smbhunter\x64\Release\win64lib.dll
